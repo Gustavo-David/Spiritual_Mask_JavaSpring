@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/pacman.css');
+
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Pixelify Sans', sans-serif;
+        color: white;
+        flex-direction: column;
+        outline: none;
+
+}
+
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #151826;
+}
+
+/*--------------------------------------------------------------------------------------*/
+.Header {
+
+        position: relative;
+        display: flex;
+        background-color: green;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        margin-bottom: 20vh;
+
+}
+
+.ImgHeader {
+        display: inline-block;
+        width: 100vw;
+        height: auto;
+        margin-top: 0;
+}
+
+.Title {
+
+        width: 90vw;
+        height: auto;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+}
+
+.TitleNavigation {
+        margin-top: 0;
+        margin: 0 10vw 0 10vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+}
+
+.ButtonTitleNavigation a {
+        
+        font-size: 1.5vw;
+        cursor: pointer;
+        text-decoration: none;
+        margin-right: 2vw;
+        padding:0vw 2vw 1vw 0.2vw;
+        position: relative;
+}
+
+.ButtonTitleNavigation > a::after {
+        content: " ";
+        width: 0%;
+        height: 4px;
+        background-image: linear-gradient(45deg,#00CCFF,#61dfff);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s ease-in-out;
+}
+
+.ButtonTitleNavigation > a:hover::after{
+        width: 100%;
+       
+}
+
+
+.TitleNavigation > a{ /* # login*/
+        font-size: 1.5vw;
+        cursor: pointer;
+        text-decoration: none;
+        margin-right: 1vw;
+        padding:0vw 1vw 1vw 0.2vw;
+        position: relative;
+}
+
+.TitleNavigation > a::after{/* # login*/
+        content: " ";
+        width: 0%;
+        height: 4px;
+        background-image: linear-gradient(45deg,#00CCFF,#61dfff);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s ease-in-out;
+}
+
+
+
+.TitleNavigation > a:hover::after {/* # login*/
+        width: 100%;
+   
+}
+
+.TitleLogo {
+        margin: 3vw 25vw 0 25vw;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+}
+
+.TitleLogo>img {
+        width: 12vw;
+}
+
+.TitleLogo>h1 {
+        font-size: 4.5vw;
+        text-shadow: 2px 2px 5px #00CCFF;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+.Main {
+    padding: 20px 20px;
+    width: 30vw;
+    height: 70vh;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #00CCFF;
+    border-radius: 20px;
+    background: linear-gradient(#151826, #002742, #151826);
+}
+
+.LoginImage {
+
+    display: flex;
+    width: 10vw;
+}
+
+.LoginImage>h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 2px #00CCFF;
+    margin-top: 20px;
+    font-size: 3vw;
+}
+
+.TextField {
+    font-size: 1.5vw;
+    ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+}
+
+.TextLogin {
+    padding: 5px;
+    margin: 2px 2px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-size: 1.5vw;
+    
+
+}
+
+.TextLogin>input {
+    padding: 3px;
+    width: 100%;
+    border-radius: 3px;
+    border: 3px solid #00CCFF;
+    align-items: flex-start;
+    display: flex;
+    background-color: #0f1425;
+
+}
+
+.TextLogin>input::placeholder {
+    color: white;
+    font-size: 0.8vw;
+}
+
+
+.PasswordLogin {
+    padding: 5px;
+    margin: 2px 2px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.PasswordLogin>input {
+    padding: 3px;
+    width: 100%;
+    border-radius: 3px;
+    border: 3px solid #00CCFF;
+    align-items: flex-start;
+    display: flex;
+    background-color: #0f1425;
+}
+
+.PasswordLogin>input::placeholder {
+    color: white;
+    font-size: 0.8vw;
+    ;
+}
+
+
+.CheckboxAndForgetPassword {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Checkbox {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+}
+
+.Checkbox input {
+    display: none;
+
+}
+
+.Checkbox input+label:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #00CCFF;
+    border-radius: 3px;
+    margin-right: 5px;
+    vertical-align: middle;
+    /* centraliza a caixa do checkbox*/
+    cursor: pointer;
+}
+
+.Checkbox input:checked+label:before {
+    background-color: #00CCFF;
+    color: white;
+    content: '\2713';
+    font-size: 20px;
+    line-height: 16px;
+
+}
+
+.ForgetPassword {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+}
+
+.ButtonLogin {
+    padding: 10px 10px;
+    width: 15vw;
+    height: 5vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid#00CCFF;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    font-size: 1.5vw;
+    border-radius: 3px;
+}
+
+.ButtonLogin:hover {
+    box-shadow: 0px 0px 5px 2px #00CCFF;
+    color: #00CCFF;
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+
+
+
+.ImgFooter {
+    display: inline-block;
+    width: 100vw;
+    height: auto;
+    margin-top: 0;
+}

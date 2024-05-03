@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>login</title>
+        <link rel="stylesheet" href="Style\styleCardLogin.css">
+        <script src="JavaScript\LoginScript.js" defer></script>
+</head>
+
+<body>
+        <header class="Header">
+                <img src="Image/Titulo.png" class="ImgHeader" />
+          
+                <div class="Title">
+                  <nav class="TitleNavigation">
+                    <nav class="ButtonTitleNavigation">
+                      <a id="Home" onclick="location.href='index.html'"> Home</a>
+          
+                      <a id="History" onclick="location.href='history.html'"> History</a>
+          
+                      <a id="Character" onclick="location.href='character.html'"
+                        >Character</a
+                      >
+          
+                      <a id="Mask" onclick="location.href='Mask.html'"> Mask </a>
+          
+                      <a id="Update" onclick="location.href='update.html'"> Update </a>
+                    </nav>
+          
+                    <a id="Login" onclick="location.href='CardLogin.html'"> Login</a>
+                  </nav>
+                  <div class="TitleLogo">
+                    <img src="Image\TitleImage.png" />
+                    <h1>Spiritual Mask</h1>
+                  </div>
+                </div>
+              </header>
+
+        <main class="Main">
+                <div class="LoginImage">
+                        <img src="Image\RaposinhaLogin.png">
+                        <h1>LOGIN</h1>
+                </div>
+
+                <div class="TextField">
+                        <div class="TextLogin">
+                                <input id="Username" type="text" placeholder="Username" >
+                        </div>
+                        <div class="PasswordLogin">
+                                <input id="Password" type="password" placeholder="Password" >
+                        </div>
+                </div>
+
+                <div class="CheckboxAndForgetPassword">
+                        <div class="Checkbox">
+                                <label>
+                                        <input type="checkbox" id="check" name="rememberMe" checked>
+                                        <label for="check">Remenber me</label>
+                                </label>
+                        </div>
+                        <div class="ForgetPassword">
+                                <a>Forget password?</a>
+                        </div>
+
+                </div>
+
+                <button class="ButtonLogin" type="submit" onclick = "validationLogin(); return false">LOGIN</button>
+
+        </main>
+
+        <footer class="Footer">
+                <img src="Image/Titulo.png" class="ImgFooter">
+        </footer>
+</body>
+
+</html>
