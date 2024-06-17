@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Status da Conexão com o Banco de Dados</title>
+</head>
+<body>
+    <h1>Status da Conexão com o Banco de Dados</h1>
+    <p th:if="${isConnected}">
+        Conexão com o banco de dados foi um sucesso!
+    </p>
+    <p th:if="${!isConnected}">
+        Falha na conexão com o banco de dados.
+    </p>
+</body>
+</html>
