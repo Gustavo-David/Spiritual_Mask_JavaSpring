@@ -24,8 +24,8 @@ body {
 .Header {
 
         position: relative;
-        display: flex;
-        background-color: green;
+        display: flex; 
+        background: #151826;
         justify-content: center;
         align-items: center;
         width: 100vw;

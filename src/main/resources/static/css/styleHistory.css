@@ -25,8 +25,7 @@ body {
 
         position: relative;
         display: flex;
-        background-color: green;
-        justify-content: center;
+        background: #151826;        justify-content: center;
         align-items: center;
         width: 100vw;
         height: auto;
